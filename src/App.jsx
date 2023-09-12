@@ -1,16 +1,28 @@
+import React, { useState } from 'react';
 import './App.css'
 import fotoPerfil from "./imagens/perfil.png"
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  const themeClass = theme === 'light' ? 'light' : 'dark';
+
   return (
     <>
-    <header className='header'>
-      <h3>Home</h3>
-      <h3>Sobre</h3>
-      <h3>Contato</h3>
-    </header>
+    <header className={themeClass}>
+    <h3>Home</h3>
+    <h3>Sobre</h3>
+    <h3>Contato</h3>
+    <button onClick={toggleTheme}>Mode {themeClass}</button>
+  </header>
+    <body className={themeClass}>
+ 
       <section className='sobre'>
-        <img width="200" height="200" src={ fotoPerfil } alt="foto perfil" />
+        <img width="200" height="200" src={fotoPerfil} alt="foto perfil" />
         <p>
           Atualmente estou reciclando meus conhecimentos em analise de sistemas e desenvolvimento web por meio da Trybe.
           Tenho experiencia em designer gráfico desde jovem, criando artes, montagens e edições de vídeos.
@@ -35,7 +47,7 @@ function App() {
       <h1>Habilidades</h1>
       <section className='skills'>
         <div className='imagem-container'>
-          <img  width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
+          <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
           HTML5
         </div>
         <div className='imagem-container'>
@@ -63,6 +75,7 @@ function App() {
           Git
         </div>
       </section>
+    </body >
     </>
   )
 }
