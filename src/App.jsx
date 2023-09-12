@@ -47,7 +47,7 @@ function App() {
       <h1>Habilidades</h1>
       <section className='skills'>
         <div className='imagem-container'>
-          <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
+          <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
           HTML5
         </div>
         <div className='imagem-container'>
