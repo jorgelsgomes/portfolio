@@ -13,6 +13,10 @@
   color: #000000;
 }
 
+html {
+  display: flexbox;
+}
+
 header {
   display: flex;
   justify-content: center;
