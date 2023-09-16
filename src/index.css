@@ -11,15 +11,3 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-
-  .dark {
-    background-color: #000;
-    color: #fff;
-    box-shadow:0px 2px 5px rgba(255, 255, 255, 0.3);
-  }
-  
-  .light {
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
-  }

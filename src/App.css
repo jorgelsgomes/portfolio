@@ -1,9 +1,15 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: #000;
+  color: #fff;
 }
 
-header {
+body {
+  width: 100%;
+}
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +18,8 @@ header {
   left: 0;
   width: 100%;
   height: 60px;
-  }
-
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+}
 
 .sobre img {
   margin: 20px;
@@ -24,27 +30,29 @@ section {
   display: flex;
   text-align: center;
   justify-content: center;
+  width: 100%;
 }
 
 .skills div {
-  display:block;
   margin: 30px;
-  height:237px;
-  align-items: center;
+  height: 237px;
 }
 
 p {
-  margin-top: 80px;
-  width: 600px;
+  text-align: center;
+  margin: 20px;
+  padding: 80px;
 }
+
 .sobre {
-  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
+  padding: 0;
 }
 
 .project {
   justify-content: space-between;
-  margin: 30px;
 }
 
 h1 {
@@ -56,68 +64,40 @@ h3 {
   margin: 10px;
 }
 
-button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: white;
-  color: black;
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #e7e7e7;
-}
-
-
-.imagem-container {
-  margin: 20px;
-}
-
-.project-container img{
-  margin: 20px;
-  width: 350px; /* Tamanho padrão das imagens */
-  height: auto;
-  transition: transform 0.3s; /* Adicione uma transição suave */
-  text-align: center;
-}
-
-.project-container img:hover {
-  transform: scale(1.2);
-}
-
 .imagem-container img {
-  width: 48px; /* Tamanho padrão das imagens */
+  width: 48px;
   height: auto;
-  transition: transform 0.3s; /* Adicione uma transição suave */
+  transition: transform 0.3s;
   text-align: center;
 }
 
 .imagem-container img:hover {
-  transform: scale(1.2); /* Aumenta o tamanho para 120% do tamanho original */
+  transform: scale(1.2);
 }
-@media only screen and ( max-width : 430px ) {
 
+@media only screen and (max-width: 430px) {
   .imagem-container img {
-    width: 96px; /* Tamanho padrão das imagens */
-    height: auto;
-    transition: transform 0.3s; /* Adicione uma transição suave */
-    text-align: center;
+    width: 96px;
   }
 
   section {
-  display: block;
+    display: block;
   }
 
   html {
-  width: 100%;
-  height: 100vw;
+    width: 100%;
   }
 
   p {
-    width: 360px;
+    text-align: center;
+    margin: 20px;
+    width: 400px;
+    padding: 0;
   }
 
+  .sobre {
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px;
+  }
 }
-
