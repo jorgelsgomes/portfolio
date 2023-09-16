@@ -33,13 +33,13 @@ function Home() {
                     <div className='project-container'>
                         <img width="350" src={ProjetoRecipes} alt="imagem do projeto Receitas" />
                         <div>
-                            <Link to='https://jorgelsgomes.github.io/sitedereceitas/'>Site Receitas</Link>
+                            <Link to='https://github.com/jorgelsgomes/sitedereceitas'>Site Receitas</Link>
                         </div>
                     </div>
                     <div className='project-container'>
                         <img width="350" src={ProjetoTrunfo} alt="imagem do projeto trunfo" />
                         <div>
-                        <Link to='/https://jorgelsgomes.github.io/Trunfo/' >Trunfo </Link>
+                        <Link to='https://github.com/jorgelsgomes/Trunfo' >Trunfo </Link>
                         </div>
                     </div>
                     <div className='project-container'>
