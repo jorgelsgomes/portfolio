@@ -3,9 +3,8 @@ import '../App.css';
 import Header from '../Components/Header.jsx';
 import fotoPerfil from "../imagens/perfil.png";
 import ProjetoPixelArte from "../imagens/pixelArt.png";
-import ProjetoRecipes from "../imagens/Recipes.png";
 import ProjetoTrunfo from "../imagens/trunfo.png";
-import emBreve from "../imagens/emBreve.jpeg"
+import ProjetoVendas from "../imagens/sitedevendas.png"
 import { Link } from 'react-router-dom';
 
 
@@ -15,12 +14,16 @@ function Home() {
             <Header/>
             <div>
                 <section className='sobre'>
-                    <img width="200" height="200" src={fotoPerfil} alt="foto perfil" />
+                    <div className='img-sobre'>
+                    <img src={fotoPerfil} alt="foto perfil" />
+                    </div>
+                    <div className='text-sobre'>
                     <p>
                         Atualmente estou reciclando meus conhecimentos em analise de sistemas e desenvolvimento web por meio da Trybe.
                         Tenho experiencia em designer gráfico desde jovem, criando artes, montagens e edições de vídeos.
                         Dessa forma esses trabalhos e o trato com ferramentas computacionais é algo natural para mim.
                     </p>
+                    </div>
                 </section>
                 <h1>Projetos</h1>
                 <section className='project'>
@@ -31,21 +34,15 @@ function Home() {
                         </div>
                     </div>
                     <div className='project-container'>
-                        <img width="350" src={ProjetoRecipes} alt="imagem do projeto Receitas" />
+                        <img width="350" src={ProjetoVendas} alt="imagem do projeto site de vendas" />
                         <div>
-                            <Link to='https://github.com/jorgelsgomes/sitedereceitas'>Site Receitas</Link>
+                            <Link to='https://site-de-vendas.vercel.app/'>Site de Vendas</Link>
                         </div>
                     </div>
                     <div className='project-container'>
                         <img width="350" src={ProjetoTrunfo} alt="imagem do projeto trunfo" />
                         <div>
                         <Link to='https://github.com/jorgelsgomes/Trunfo' >Trunfo </Link>
-                        </div>
-                    </div>
-                    <div className='project-container'>
-                        <img width="350" src={emBreve} alt="imagem do projeto pixels Arte" />
-                        <div>
-                            React Native(Em breve)
                         </div>
                     </div>
                 </section>
