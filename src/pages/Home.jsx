@@ -11,39 +11,45 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <>
-            <Header/>
+            <Header />
             <div>
                 <section className='sobre'>
                     <div className='img-sobre'>
-                    <img src={fotoPerfil} alt="foto perfil" />
+                        <img src={fotoPerfil} alt="foto perfil" />
                     </div>
                     <div className='text-sobre'>
-                    <p>
-                        Atualmente estou reciclando meus conhecimentos em analise de sistemas e desenvolvimento web por meio da Trybe.
-                        Tenho experiencia em designer gráfico desde jovem, criando artes, montagens e edições de vídeos.
-                        Dessa forma esses trabalhos e o trato com ferramentas computacionais é algo natural para mim.
-                    </p>
+                        <p>
+                            Atualmente estou reciclando meus conhecimentos em analise de sistemas e desenvolvimento web por meio da Trybe.
+                            Tenho experiencia em designer gráfico desde jovem, criando artes, montagens e edições de vídeos.
+                            Dessa forma esses trabalhos e o trato com ferramentas computacionais é algo natural para mim.
+                        </p>
                     </div>
                 </section>
                 <h1>Projetos</h1>
                 <section className='project'>
                     <div className='project-container'>
-                        <img width="350" src={ProjetoPixelArte} alt="imagem do projeto pixels Arte" />
-                        <div>
-                        <Link to='https://github.com/jorgelsgomes/pixelsArt' >Pixels Arte</Link>
-                        </div>
+                        <Link to='https://github.com/jorgelsgomes/pixelsArt' >
+                            <img width="350" src={ProjetoPixelArte} alt="imagem do projeto pixels Arte" />
+                            <div>
+                                Pixels Arte
+                            </div>
+                        </Link>
                     </div>
                     <div className='project-container'>
-                        <img width="350" src={ProjetoVendas} alt="imagem do projeto site de vendas" />
-                        <div>
-                            <Link to='https://site-de-vendas.vercel.app/'>Site de Vendas</Link>
-                        </div>
+                        <Link to='https://github.com/jorgelsgomes/site-vendas'>
+                            <img width="350" src={ProjetoVendas} alt="imagem do projeto site de vendas" />
+                            <div>
+                                Site de Vendas (Em Desenvolvimento)
+                            </div>
+                        </Link>
                     </div>
                     <div className='project-container'>
-                        <img width="350" src={ProjetoTrunfo} alt="imagem do projeto trunfo" />
-                        <div>
-                        <Link to='https://github.com/jorgelsgomes/Trunfo' >Trunfo </Link>
-                        </div>
+                        <Link to='https://github.com/jorgelsgomes/Trunfo' >
+                            <img width="350" src={ProjetoTrunfo} alt="imagem do projeto trunfo" />
+                            <div>
+                                Trunfo
+                            </div>
+                        </Link>
                     </div>
                 </section>
                 <h1>Habilidades</h1>
